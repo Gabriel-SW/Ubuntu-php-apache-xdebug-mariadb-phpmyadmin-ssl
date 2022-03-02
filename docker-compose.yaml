@@ -1,0 +1,69 @@
+version: "3.3"
+services:
+
+# Ubuntu-apache-php-xdebug Container : 
+
+  web_dev:
+    container_name : "apache-php"
+    extra_hosts:
+      host.docker.internal: "host-gateway"
+    build: 
+      context: "./"
+      dockerfile: "Dockerfile"
+    working_dir: "/var/www/html"
+    init: true
+    volumes:
+      - type: "bind"
+        source: "./"
+        target: "/var/www/html"
+        consistency: "cached"
+      - type: "bind"
+        source: "./log"
+        target: "/var/www/html/log"
+      - "./conf/php.ini:/etc/php/7.4/apache2/php.ini"
+      - "./conf/xdebug.ini:/etc/php/7.4/mods-available/xdebug.ini"
+      - "./conf/xdebug_error.ini:/etc/php/7.4/mods-available/xdebug_error.ini"
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - "mysql"
+    links:
+      - "mysql"
+
+# Mariadb Container : 
+
+  mysql:
+    container_name : "mysql"
+    image: "mariadb:10.5.8"
+    restart: "always"
+    command: "--default-authentication-plugin=mysql_native_password"
+    environment:
+      MYSQL_DATABASE: "s4_gp3"
+      MYSQL_ROOT_PASSWORD: "Let_*_this_*_password_*_for_*_security"
+      MYSQL_USER: "devuser"
+      MYSQL_PASSWORD: "devpass"
+    volumes:
+      - "mysql-data:/var/lib/mysql"
+      - "./database:/docker-entrypoint-initdb.d"
+    ports:
+      - "3306"
+
+# PHPmyAdmin Container : 
+
+  phpmyadmin:
+    container_name : "phpmyadmin"
+    image: "phpmyadmin"
+    restart: "always"
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: "mysql"
+      PMA_USER: "devuser"
+      PMA_PASSWORD: "devpass"
+      PMA_ARBITRARY: 1
+    links:
+      - "mysql"
+
+volumes:
+  mysql-data:
