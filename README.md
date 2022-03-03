@@ -18,14 +18,14 @@ Enter *localhost:8080* to access PhpMyAdmin page
 ## This repo contain the following container : 
 
 1. *Apache-php*
-    A) **[Ubuntu](https://hub.docker.com/_/ubuntu/) (latest version) **
-    B) **Apache2**
-    C) **php (7.4)**
-    D) **xdebug (3.0)**
-    E) **pdo-mysql**
+A) **[Ubuntu](https://hub.docker.com/_/ubuntu/) (latest version) **
+B) **Apache2**
+C) **php (7.4)**
+D) **xdebug (3.0)**
+E) **pdo-mysql**
 
 2. *mysql*
-    A) **[mariadb](https://hub.docker.com/_/mariadb) (10.5.8)**
+A) **[mariadb](https://hub.docker.com/_/mariadb) (10.5.8)**
 
 3. *[PhpMyAdmin](https://hub.docker.com/_/phpmyadmin)*
 
@@ -47,7 +47,7 @@ Enter *localhost:8080* to access PhpMyAdmin page
 1. [xdebug.ini](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/blob/main/conf/xdebug.ini)
 2. [xdebug_error.ini](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/blob/main/conf/xdebug_error.ini)
 
-## [Log](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/tree/main/log) Files
+## [Log](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/tree/main/log) Folder
 1. apache-access.log
 2. apache-error.log
 3. php-error.log
@@ -62,7 +62,7 @@ Enter *localhost:8080* to access PhpMyAdmin page
 
 # xdebug
 
-This project is compatible with Xdebug, to use it, go to VsCode and download the php Debug extension: -https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug
+This project is compatible with Xdebug, to use it, go to VsCode and download the [php Debug extension](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)
 
 There is a configuration script in json format in the .vscode folder of the project, no need to create a new one. Then go to any script in the project, place a BreakPoint and press F5. Reload the browser page to debug and play. 
 
