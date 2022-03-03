@@ -20,13 +20,17 @@
    1. *Apache-php*
 
       1.1 **[Ubuntu](https://hub.docker.com/_/ubuntu/) (latest version) **
+
       1.2 **Apache2**
+
       1.3 **php (7.4)**
+
       1.4 **xdebug (3.0)**
+      
       1.5 **pdo-mysql**
 
    2. *mysql*
-   
+
       2.1 **[mariadb](https://hub.docker.com/_/mariadb) (10.5.8)**
 
    3. *[PhpMyAdmin](https://hub.docker.com/_/phpmyadmin)*
