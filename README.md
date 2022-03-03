@@ -60,11 +60,11 @@
    ## [database](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/tree/main/database) Folder
    1. [Database.sql](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/blob/main/database/Database.sql) **(Database in .sql format will be automatically imported into virtual environnement)**
 
-    # xdebug
+   # xdebug
 
-    This project is compatible with Xdebug, to use it, go to VsCode and download the [php Debug extension](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)
+   This project is compatible with Xdebug, to use it, go to VsCode and download the [php Debug extension](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)
 
-    There is a configuration script in json format in the .vscode folder of the project, no need to create a new one. Then go to any script in the project, place a BreakPoint and press F5. Reload the browser page to debug and play. 
+   There is a configuration script in json format in the .vscode folder of the project, no need to create a new one. Then go to any script in the project, place a BreakPoint and press F5. Reload the browser page to debug and play. 
 
 # Git Tools :
 
