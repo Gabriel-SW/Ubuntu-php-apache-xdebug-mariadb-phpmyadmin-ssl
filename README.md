@@ -18,6 +18,7 @@
    ## This repo contain the following container : 
 
    1. *Apache-php*
+
       1.1 **[Ubuntu](https://hub.docker.com/_/ubuntu/) (latest version) **
       1.2 **Apache2**
       1.3 **php (7.4)**
@@ -25,6 +26,7 @@
       1.5 **pdo-mysql**
 
    2. *mysql*
+   
       2.1 **[mariadb](https://hub.docker.com/_/mariadb) (10.5.8)**
 
    3. *[PhpMyAdmin](https://hub.docker.com/_/phpmyadmin)*
@@ -64,7 +66,7 @@
 
    This project is compatible with Xdebug, to use it, go to VsCode and download the [php Debug extension](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)
 
-   There is a configuration script in json format in the .vscode folder of the project, no need to create a new one. Then go to any script in the project, place a BreakPoint and press F5. Reload the browser page to debug and play. 
+   There is a [configuration script](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/blob/main/.vscode/launch.json) in json format in the .vscode folder of the project, no need to create a new one. Then go to any script in the project, place a BreakPoint and press F5. Reload the browser page to debug and play. 
 
 # Git Tools :
 
@@ -75,7 +77,7 @@
         git update-index --assume-unchanged path/to/file
 
    When you want to start keeping track again
-   
+
         git update-index --no-assume-unchanged path/to/file
 
    ## To make a branch:
