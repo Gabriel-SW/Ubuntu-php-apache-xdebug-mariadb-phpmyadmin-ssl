@@ -4,42 +4,42 @@
 
    ## To use this repo, you need to : 
 
-   1. *Install* [Docker Desktop](https://www.docker.com/get-started)
+   1. **Install** [Docker Desktop](https://www.docker.com/get-started)
    2. [Download](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/archive/refs/heads/main.zip) this repo and paste all file and folders into your *working directory*.
-   3. *Open* a *terminal* and cd to your working directory
-   4. Check that you have enough space on the disc used. The container is between *2 and 3GB*
-   5. Enter the following command : *docker-compose up -d --build* 
-   6. When the compose and build operation are *done*, go to your *web browser* and enter *localhost* to access your site.
-   Enter *localhost:8080* to access PhpMyAdmin page
-   7. Your done, your virtual web environnement is *ready to use*
+   3. **Open** a **terminal** and cd to your working directory
+   4. Check that you have enough space on the disc used. The container is between **2 and 3GB**
+   5. Enter the following command : **docker-compose up -d --build** 
+   6. When the compose and build operation are **done**, go to your **web browser** and enter **localhost** to access your site.
+   Enter **localhost:8080** to access PhpMyAdmin page
+   7. Your done, your virtual web environnement is **ready to use**
 
 # Container
 
    ## This repo contain the following container : 
 
-   1. *Apache-php*
+   1. **Apache-php**
+   
+      1.1 [Ubuntu](https://hub.docker.com/_/ubuntu/) (latest version)
 
-      1.1 **[Ubuntu](https://hub.docker.com/_/ubuntu/) (latest version) **
+      1.2 Apache2
 
-      1.2 **Apache2**
+      1.3 php (7.4)
 
-      1.3 **php (7.4)**
+      1.4 xdebug (3.0)
 
-      1.4 **xdebug (3.0)**
-      
-      1.5 **pdo-mysql**
+      1.5 pdo-mysql
 
-   2. *mysql*
+   2. **mysql**
 
-      2.1 **[mariadb](https://hub.docker.com/_/mariadb) (10.5.8)**
+      2.1 [mariadb](https://hub.docker.com/_/mariadb) (10.5.8)
 
-   3. *[PhpMyAdmin](https://hub.docker.com/_/phpmyadmin)*
+   3. **[PhpMyAdmin]**(https://hub.docker.com/_/phpmyadmin)
 
 # Files and Folders Description
 
    ## Docker Files : 
-   1. [Docker-compose.yml](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/blob/main/docker-compose.yaml) **(It contain all container that we need)**
-   2. [DockerFile](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/blob/main/Dockerfile) **(It contain all command to build apache-php container based on ubuntu)**
+   1. [Docker-compose.yml](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/blob/main/docker-compose.yaml) *(It contain all container that we need)*
+   2. [DockerFile](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/blob/main/Dockerfile) *(It contain all command to build apache-php container based on ubuntu)*
 
    ## Apache Configuration files
    1. [apache.conf](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/blob/main/conf/apache.conf)
@@ -61,10 +61,10 @@
 
    ## [.vscode](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/tree/main/.vscode) Folder
    1. [extensions.json](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/blob/main/.vscode/extensions.json)
-   2. [launch.json](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/blob/main/.vscode/launch.json) **(Contains xdebug configuration for VsCode)**
+   2. [launch.json](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/blob/main/.vscode/launch.json) *(Contains xdebug configuration for VsCode)*
 
    ## [database](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/tree/main/database) Folder
-   1. [Database.sql](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/blob/main/database/Database.sql) **(Database in .sql format will be automatically imported into virtual environnement)**
+   1. [Database.sql](https://github.com/Gabriel-SW/Ubuntu-php-apache-xdebug-mariadb-phpmyadmin-ssl/blob/main/database/Database.sql) *(Database in .sql format will be automatically imported into virtual environnement)*
 
    # xdebug
 
