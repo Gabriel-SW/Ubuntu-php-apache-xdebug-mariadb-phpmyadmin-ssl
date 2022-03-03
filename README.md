@@ -33,7 +33,7 @@
 
       2.1 [mariadb](https://hub.docker.com/_/mariadb) (10.5.8)
 
-   3. **[PhpMyAdmin]**(https://hub.docker.com/_/phpmyadmin)
+   3. **[PhpMyAdmin](https://hub.docker.com/_/phpmyadmin)**
 
 # Files and Folders Description
 
